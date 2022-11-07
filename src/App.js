@@ -3,13 +3,18 @@ import NavBar from './components/NavBar';
 
 import './App.css';
 import AllProduct from './pages/AllProduct';
+import Home from './pages/Home';
+import OneProduct from './pages/OneProduct';
 
 function App() {
   const [page, setPage] = useState("home")
+  
   return (
     <div className="App">
       <NavBar />
-      {page === "home" && <AllProduct />}
+      {page === "home" && <Home />}
+      {page === "AllProduct" && <AllProduct />}
+      {page === "OneProduct" && <AllProduct />}
     </div>
   );
 }
