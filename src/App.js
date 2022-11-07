@@ -7,14 +7,14 @@ import Home from './pages/Home';
 import OneProduct from './pages/OneProduct';
 
 function App() {
-  const [page, setPage] = useState("home")
-  
+  const [pageInfo, setPage] = useState({ name: "Home", Id: null })
+
   return (
     <div className="App">
-      <NavBar />
-      {page === "home" && <Home />}
+      <NavBar setPage={setPage} />
+      {page === "Home" && <Home handlePage={setPage} />}
       {page === "AllProduct" && <AllProduct />}
-      {page === "OneProduct" && <AllProduct />}
+      {page === "OneProduct" && <OneProduct id={page.id} />}
     </div>
   );
 }

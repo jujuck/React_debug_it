@@ -1,23 +1,32 @@
 import React from 'react'
 
-const NavBar = () => {
+const NavBar = ({ setPage }) => {
   return (
-    <nav class="columns is-8" role="navigation" aria-label="main navigation">
-      <div class="column is-one-fifth">
-        <button class="image is-128x128 m-auto">
+    <nav className="columns is-8" role="navigation" aria-label="main navigation">
+      <div className="column is-one-fifth">
+        <button
+          className="image is-128x128 m-auto"
+          onClick={() => setPage({ name: "Home", id: null })}
+        >
           <img
-            src="./assets/logo.jpeg"
+            src="../assets/logo.jpeg"
             alt="logo" />
         </button>
       </div>
 
-      <div id="navbarBasicExample" class="column is-three-quarter m-auto">
-        <div class="">
-          <button class="button is-black m-4">
+      <div id="navbarBasicExample" className="column is-three-quarter m-auto">
+        <div className="">
+          <button
+            className="button is-black m-4"
+            onClick={() => setPage({ name: "home", id: null })}
+          >
             Home
           </button>
 
-          <button class="button is-black m-4">
+          <button
+            className="button is-black m-4"
+            onClick={() => console.log("I should not forget to implement my button")}
+          >
             My beers
           </button>
         </div>
