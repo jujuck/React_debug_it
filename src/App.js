@@ -1,12 +1,15 @@
+import { useState } from 'react'
 import NavBar from './components/NavBar';
 
 import './App.css';
+import AllProduct from './pages/AllProduct';
 
 function App() {
+  const [page, setPage] = useState("home")
   return (
     <div className="App">
       <NavBar />
-      <h1>Ma beers discovery</h1>
+      {page === "home" && <AllProduct />}
     </div>
   );
 }
