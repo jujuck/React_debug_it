@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <NavBar setPage={setPage} />
-      {page.name === "Home" && <Home handlePage={setPage} />}
+      {page.name === "Home" && <Home setPage={setPage} />}
       {page.name === "AllProduct" && <AllProduct />}
       {page.name === "OneProduct" && <OneProduct id={page.id} />}
     </div>
