@@ -25,7 +25,7 @@ const NavBar = ({ setPage }) => {
 
           <button
             className="button is-black m-4"
-            onClick={() => console.log("I should not forget to implement my button")}
+            onClick={() => setPage({ name: "AllProduct", id: null })}
           >
             My beers
           </button>
