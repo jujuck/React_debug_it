@@ -18,7 +18,7 @@ const NavBar = ({ setPage }) => {
         <div className="">
           <button
             className="button is-black m-4"
-            onClick={() => setPage({ name: "home", id: null })}
+            onClick={() => setPage({ name: "Home", id: null })}
           >
             Home
           </button>
