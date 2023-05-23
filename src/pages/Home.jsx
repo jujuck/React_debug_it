@@ -10,7 +10,7 @@ const Home = ({ setPage }) => {
       <button className="button is-black m-5" onClick={() => setPage({ name: "allProduct", id: null })}>See All my beers now !!!</button>
       <div className="columns m-5">
         {beers.slice(1, 5).map((beer) => {
-          return <button className="column m-2" onClick={() => setPage({ name: "OneProduct", id: 10 })} >
+          return <button className="column m-2" key={beer.id} onClick={() => setPage({ name: "OneProduct", id: 10 })} >
             <img src={beer.image_url} alt={beer.name} className="card_image" />
           </button>
         })}
