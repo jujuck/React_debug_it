@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="App">
       <NavBar setPage={setPage} />
-      {page === "Home" && <Home handlePage={setPage} />}
-      {page === "AllProduct" && <AllProduct />}
-      {page === "OneProduct" && <OneProduct id={page.id} />}
+      {page.name === "Home" && <Home handlePage={setPage} />}
+      {page.name === "AllProduct" && <AllProduct />}
+      {page.name === "OneProduct" && <OneProduct id={page.id} />}
     </div>
   );
 }
