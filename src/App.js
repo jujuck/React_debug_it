@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <NavBar setPage={setPage} />
       {page.name === "Home" && <Home setPage={setPage} />}
-      {page.name === "AllProduct" && <AllProduct />}
+      {page.name === "AllProduct" && <AllProduct setPage={setPage} />}
       {page.name === "OneProduct" && <OneProduct id={page.id} />}
     </div>
   );
