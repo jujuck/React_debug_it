@@ -9,7 +9,7 @@ const OneProduct = ({ id }) => {
       <h1 className="title">More informations about {beer.name}</h1>
       <div className="columns m-5">
         <div className="column m-2">
-          <img src={beer.image__url} alt="" className="image m-auto" />
+          <img src={beer.image_url} alt="" className="image m-auto" />
         </div>
         <div className="column m-2">
           <div className="box">
