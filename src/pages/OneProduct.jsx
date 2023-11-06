@@ -3,7 +3,7 @@ import Description from '../components/Description';
 import beers from '../data/beers'
 
 const OneProduct = ({ id }) => {
-  const beer = beers.find(el => el.id = id)
+  const beer = beers.find(el => el.id === id)
   return (
     <div>
       <h1 className="title">More informations about {beer.name}</h1>
@@ -13,7 +13,7 @@ const OneProduct = ({ id }) => {
         </div>
         <div className="column m-2">
           <div className="box">
-            <Description text={beer.brewer_tips} label="Brewer tips" cls="m-3" />
+            <Description text={beer.brewers_tips} label="Brewer tips" cls="m-3" />
             <Description text={beer.description} label="Description" cls="m-3" />
             <div className="columns">
               <div className="column">
