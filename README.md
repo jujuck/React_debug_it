@@ -1,19 +1,43 @@
-# Getting Started with Create React App
+<h1 align="center">Bienvenue sur 'React Debug It' 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.1-blue.svg?cacheSeconds=2592000" />
+</p>
+    
+## Installation
 
-To start, ```Git clone``` the repo and do as usual
+```sh
+npm install
+```
 
-## Available Scripts
+## Usage
 
-In the project directory, you can run:
+```sh
+npm run start
+```
 
-### `npm start`
+## Objectif
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ce projet possède plein de petites erreurs, à vous de les trouver et de les corriger.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Pour cela, n'hésitez pas à utiliser les outils de debug de votre navigateur la console par exemple, vos cours, vos connaissances, etc.
 
+## Auteur
 
-### Bugs are in every page...
-Find all the bugs one by one in order to restore the app, with 3 pages : Home, All Product and One Product for all specific product
+👤 **Julien Richard**
+
+-   GitHub: [@jujuck](https://github.com/jujuck)
+
+## Contribuer
+
+Les contributions, les problèmes et les demandes de fonctionnalités sont les bienvenus !<br />N'hésitez pas à consulter [issues page](https://github.com/jujuck/React_debug_it/issues).
+
+## Contributeurs
+
+👤 **Anthony Gorski**
+
+## Version
+
+-   1.0.0
+    -   Création du projet
+-   1.0.1
+    -   Update README.md avec les objectifs
