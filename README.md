@@ -33,8 +33,9 @@ Les contributions, les problèmes et les demandes de fonctionnalités sont les b
 
 ## Contributeurs
 
-👤 **Anthony Gorski**
-👤 **Samuel Faber**
+-   👤 **Anthony Gorski**
+
+-   👤 **Samuel Faber**
 
 ## Version
 
